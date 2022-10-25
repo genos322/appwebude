@@ -6,14 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  numb: number = 0;
+  numb: number = 19;
 
-  add(){
-    this.numb++;
+  handleCount(value: number){
+    
+    this.numb = value;
+    
   }
-  
-  rest(){
-    this.numb--;
+
+  handleDis(value: number){
+    this.numb = value;
   }
- 
 }
